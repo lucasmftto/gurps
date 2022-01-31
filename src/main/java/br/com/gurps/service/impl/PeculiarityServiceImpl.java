@@ -1,14 +1,15 @@
-package br.com.gurps.service;
+package br.com.gurps.service.impl;
 
 import br.com.gurps.dto.PeculiarityDTO;
 import br.com.gurps.entity.Peculiarity;
 import br.com.gurps.repository.PeculiarityRepository;
+import br.com.gurps.service.PeculiarityService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PeculiarityServiceImpl implements PeculiarityService{
+public class PeculiarityServiceImpl implements PeculiarityService {
 
     @Autowired
     private PeculiarityRepository repository;

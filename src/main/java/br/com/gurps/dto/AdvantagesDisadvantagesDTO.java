@@ -1,12 +1,14 @@
 package br.com.gurps.dto;
 
 import lombok.Data;
+import lombok.ToString;
 
 @Data
-public class PeculiarityDTO extends CharacterRootDTO {
+@ToString
+public class AdvantagesDisadvantagesDTO extends CharacterRootDTO {
 
     public boolean equals(Object ref) {
-        PeculiarityDTO c = (PeculiarityDTO) ref;
+        AdvantagesDisadvantagesDTO c = (AdvantagesDisadvantagesDTO) ref;
         return this.getName() == c.getName();
     }
 
